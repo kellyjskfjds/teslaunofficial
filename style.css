@@ -1,0 +1,204 @@
+@charset "utf-8";
+
+footer{
+	text-align:center;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	font-famly: Arial, Helvetica, sans-serif;
+	background:black;
+	color:white;
+	line-height:1.6;
+	height:100vh;
+}
+
+.container{
+	width:100%;
+	height:100%;
+	overflow-y:scroll;
+	scroll-behavior: smooth;
+	scroll-snap-type: y mandatory;
+	scroll_snap-align: center;
+}
+
+.navtop{
+	position:fixed;
+	top:0;
+	z-index:1;
+	display:flex;
+	width:100%;
+	height:60px;
+	background: rgba(10,10,10,0.7);
+}
+
+
+.navtop ul{
+	display:flex;
+	list-style:none;
+	width:100%;
+	justify-content: center;
+}
+
+.navtop ul li{
+	margin: 0 1rem;
+	padding: 1rem;
+}
+
+.navtop ul li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color:white;
+}
+
+.navtop ul li a:hover{
+	color:skyblue;
+}
+
+section{
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	width:100%;
+	height:100vh;
+}
+
+section h1{
+	font-size:4rem;
+}
+
+section p{
+	font-size:1.5rem;
+}
+
+section#home{
+	background:url("pics/TESLAHOME.jfif") no-repeat center center/cover;
+}
+
+section#x{
+	background:url("pics/TESLAX.jfif") no-repeat center center/cover;
+}
+
+section#three{
+	background:url("pics/TESLA3.jpg") no-repeat center center/cover;
+}
+
+section#y{
+	background:url("pics/TESLAY.jpg") no-repeat center center/cover;
+}
+
+section#s{
+	background:url("pics/TESLAS.jpg") no-repeat center center/cover;
+}
+
+section#p{
+	background:url("pics/TESLAP.png") no-repeat center center/cover;
+}
+
+.viewmore{
+	background-color:rgba(0,0,0,0);
+  	border: solid 10px;
+  	color: white;
+ 	padding: 20px 40px;
+  	text-align: center;
+ 	text-decoration: none;
+ 	display: inline-block;
+  	font-size: 16px;
+ 	margin: 4px 2px;
+	border-radius:12px;
+	text-transform: capitalize;
+	transition:2s;
+	cursor: pointer;
+}
+
+.viewmore:hover{
+	background:rgba(10,10,10,0.5);
+	border-color:rgba(10,10,10,0.5);
+	color:rgba(10,10,10,0.5);
+	
+}
+
+
+
+
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #06D85F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}

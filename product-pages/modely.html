@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>TESLA model Y</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="../menu.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif, background-color:darkgray}
+.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
+</style>
+<body class="w3-black w3-content" style="max-width:1600px">
+<div class="containerx">
+	
+	<div class="menu-wrap">
+   		 <input type="checkbox" class="toggler">
+   		 <div class="hamburger"><div></div></div>
+    		<div class="menu">
+     			 <div>
+       			 	<div>
+         				 <ul>
+							 <li><a href="../index.html">FEATURED</a></li>
+           		 			<li><a href="../nav pages/team.html">meet the team</a></li>
+            				<li><a href="../nav pages/contact.html">contact us</a></li>
+           					 <li><a href="../nav pages/FAQ.html">FAQ</a></li>
+           					 <li><a href="../nav pages/login.html">sign in/up</a></li>
+          				</ul>
+       				 </div>
+      			</div>
+   			 </div>
+ 	 </div>
+	
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-dark-gray w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <h3 class="w3-padding-64 w3-center"><b>MODEL<br>Y</b></h3>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+  <a href="#gallery" onclick="w3_close()" class="w3-bar-item w3-button">GALLERY</a> 
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a> 
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">TESTIMONIAL</a>
+</nav>
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Push down content on small screens --> 
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Photo grid -->
+  <div class="w3-row" id="gallery" style="width:100%;height:150%">
+    <div class="w3-third">
+      <img src="productpics/modely/y1.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="productpics/modely/y2.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="productpics/modely/y3.jfif" style="width:100%" onclick="onClick(this)">
+    </div>
+
+    <div class="w3-third">
+      <img src="productpics/modely/y4.jfif" style="width:100%" onclick="onClick(this)">
+      <img src="productpics/modely/y5.jfif" style="width:100%" onclick="onClick(this)" >
+      <img src="productpics/modely/y6.jfif" style="width:100%" onclick="onClick(this)">
+    </div>
+    
+    <div class="w3-third">
+      <img src="productpics/modely/y7.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="productpics/modely/y8.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="productpics/modely/y9.jpg" style="width:100%" onclick="onClick(this)">
+    </div>
+  </div>
+
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="w3-container w3-black w3-center w3-text-light-grey w3-padding-32" id="about">
+    <h4><b>TESLA</b></h4>
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4>MODEL Y</h4>
+      <p>Using the chassis, interior, and powertrain from the smaller Model 3, the 2021 Tesla Model Y adds additional cargo space, an optional third row of seats, and SUV styling to the more affordable end of the brand's offerings. Power from the Model Y's dual on-board electric motors is plentiful; the base Standard Range model comes with rear-wheel drive but the Long Range and Performance models get all-wheel drive as standard. Driving range is superb with a maximum range of up to 326 miles per charge; more expensive rivals such as the Audi e-tron and the Jaguar I-Pace offer far less. While the interior lacks the panache of non-EV rivals such as the Mercedes-Benz GLC-class or Volvo XC60, it's still fairly comfortable and practical, if a little rough around the edges.
+      </p>
+      <hr class="w3-opacity">
+      <h4 class="w3-padding-16">Specs</h4>
+      <p class="w3-wide">pricing</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:56%">$41,190</div>
+      </div>
+      <p class="w3-wide">Range</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">220mi</div>
+      </div>
+      <p class="w3-wide">Peak power</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:65%">384hp</div>
+      </div>
+      <hr class="w3-opacity">
+
+  <!-- Contact section -->
+  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+    <div class="w3-content" style="max-width:600px">
+		<img src="../pics/mmexport1590610559856.jpg" class="w3-image w3-padding-32" width="600" height="650">
+      <h4 class="w3-center"><b>Testimonial</b></h4>
+      <p>The Model Y successfully translates the Model 3's look to a taller vehicle without becoming cartoony. The roofline is surprisingly similar to that of an SUV coupe like the BMW X6, but it's far more elegantly done. The conversion from trunk to hatch is nearly invisible, and the proportions are deftly maintained despite being 7.1 inches taller but only 2.2 inches longer. It can be easy to mistake a Model Y for a Model 3 if you don't see the two together. </p>
+
+		<p>Few vehicles do what they're meant to as well as the Model Y. It offers the commanding view of the road SUV buyers demand along with additional space for their family, pets, and cargo. It retains class-obliterating range while delivering performance only matched by sports cars at this price. Its technology is class-leading and ever-evolving but still easy to operate.</p>
+      
+<!-- End page content -->
+</div>
+</div>
+		<footer>
+		<p>not the actual tesla website</p>
+		<p>copyrights blah blah</p>
+		<p>privacy</p>
+		<img src="../pics/footericons.JPG" width="10%" height="10%">
+	
+	</footer>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+</body>
+</html>
+
